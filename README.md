@@ -2,7 +2,7 @@
 
 ## Agenda 
 
-  1. Geschichte / Grundlagen 
+  1. Geschichten / Grundlagen 
      * [GIT Pdf](http://schulung.t3isp.de/documents/pdfs/git/git-training.pdf)
      
   1. Commands (with tipps & tricks) 
