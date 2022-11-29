@@ -27,7 +27,7 @@ jobs:
            pwd 
        - name: try to push 
          run: |
-           echo "hello" > hello.txt 
+           date > hello.txt 
            git add .
            git commit -am "pdf created" 
            git push
