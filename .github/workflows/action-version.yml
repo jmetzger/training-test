@@ -29,5 +29,7 @@ jobs:
          run: |
            date > hello.txt 
            git add .
+           git config --global user.email "domain@domain.com"
+           git config --global user.name "PDF-Maker"
            git commit -am "pdf created" 
            git push
