@@ -25,3 +25,9 @@ jobs:
          run: | 
            ls -la 
            pwd 
+       - name: try to push 
+         run: |
+           echo "hello" > hello.txt 
+           git add .
+           git commit -am "pdf created" 
+           git push
