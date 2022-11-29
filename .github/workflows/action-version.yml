@@ -8,13 +8,13 @@ on: [workflow_dispatch]
 #     - main
 
 jobs:
-  lint:
+  node-docker:
     runs-on: ubuntu-latest
+    container:
+      image: node:14.15.0-alpine3.12
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
-        
-      - name: Show structure 
-        run: |
-          ls -la        
+         - name: Log the node version
+           run: |
+             node -v
+             cat /etc/os-release       
         
