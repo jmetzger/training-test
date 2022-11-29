@@ -18,5 +18,10 @@ jobs:
            node -v
            cat /etc/os-release
            env
+           apk add --no-cache git 
        - name: Checkout
          uses: actions/checkout@v3
+       - name: show structure
+         run: | 
+           ls -la 
+           pwd 
