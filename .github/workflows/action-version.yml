@@ -12,6 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: node:14.15.0-alpine3.12
+      env:
+        CHECKOUT_GIT: false
+        PUSH_GIT: false
     steps:
        - name: Log the node version
          run: |
@@ -25,7 +28,7 @@ jobs:
          run: | 
            ls -la 
            pwd 
-       - name: try to push 
+       - name: Pushing new version 
          run: |
            date > hello.txt 
            git add .
